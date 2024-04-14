@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mr.Nahhas Recipe Book</h1>
+    </header>
+    <div class="container">
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'recipe1')">Recipe 1</button>
+            <button class="tablinks" onclick="openTab(event, 'recipe2')">Recipe 2</button>
+            <button class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
+        </div>
+
+        <div id="home" class="tabcontent">
+            <h2>Welcome to Chef Nahhas's Recipe Book!</h2>
+            <p>Chef Nahhas is passionate about sharing delicious recipes from different cuisines around the world. Explore the recipes below!</p>
+        </div>
+
+        <div id="recipe1" class="tabcontent">
+            <div class="recipe-card" onclick="toggleIngredients('recipe1')">
+                <img src="https://maureenabood.com/wp-content/uploads/2023/02/Shish-barak-top-view-Maureen-Abood.jpg" alt="Sheshbarak" class="recipe-image">
+                <div class="recipe-content">
+                    <h2>Recipe For Sheshbarak!</h2>
+                    <p>This is the recipe for Sheshbarak, a Lebanese dish!</p>
+                    <ul class="ingredients">
+                        <li>Dough
+                            <ul>
+                                <li>3 cups All purpose flour</li>
+                                <li>1 tbsp Milk powder (optional)</li>
+                                <li>1 tbsp Granulated Sugar</li>
+                                <li>1 tbsp Salt</li>
+                                <li>1/3 cup Vegetable oil</li>
+                                <li>1 cup Water</li>
+                            </ul>
+                        </li>
+                        <li>Filling
+                            <ul>
+                                <li>1/2 lb Ground Beef (ground lamb can be used or a mixture of both)</li>
+                                <li>3 tbsp. Pine nuts (toasted in olive oil)</li>
+                                <li>1 Small Onion</li>
+                                <li>Handful of Parsley</li>
+                                <li>3 Garlic cloves</li>
+                                <li>1/2 tbsp Smoked Paprika</li>
+                                <li>1 tbsp Seven spice or allspice</li>
+                                <li>Salt & pepper to taste</li>
+                            </ul>
+                        </li>
+                        <li>Yogurt Sauce
+                            <ul>
+                                <li>32 oz Plain yogurt (do not use greek yogurt.)</li>
+                                <li>1 1/2 tsp Salt</li>
+                                <li>2 tbsp Corn starch</li>
+                                <li>2 cups Water (may need more)</li>
+                            </ul>
+                        </li>
+                        <li>Garnish
+                            <ul>
+                                <li>1 head Garlic (crushed)</li>
+                                <li>3 tbsp Dried Mint (crushed)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="recipe2" class="tabcontent">
+            <div class="recipe-card" onclick="toggleIngredients('recipe2')">
+                <img src="https://www.fufuskitchen.com/wp-content/uploads/2023/08/F799E39E-7880-43CD-8DD1-204C60DCF56F.webp" alt="Mansaf" class="recipe-image">
+                <div class="recipe-content">
+                    <h2>Recipe for Mansaf!</h2>
+                    <p>This is the recipe for Mansaf, A Dish Originating from Jordan! </p>
+                    <ul class="ingredients">
+                        <li>Lamb</li>
+                        <li>Yogurt Sauce</li>
+                        <li>Rice</li>
+                        <li>Bread</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="tabcontent">
+            <h2>Contact Mr. Nahhas</h2>
+            <p>If you have any questions or feedback, feel free to reach out!</p>
+            <p>Email: <a href="mailto:Chef_Nahhas@food.com">Chef_Nahhas@food.com</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>Contact me for Questions! Chef_Nahhas@food.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
